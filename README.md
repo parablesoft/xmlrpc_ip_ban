@@ -16,6 +16,11 @@ On line 3, that's location of the ruby script.
 #####ip_parser.rb
 Put the path to the bad_ips.txt that you configured in the shell script. If you are using xmlrpc.php for legit reasons, then configure the white listing. These ip addresses will get ignored by the parser when they are found in the log. 
 
+#####cron
+*/5 * * * *  sh /root/ip_ban/ip_ban.sh > /root/ip_ban/cron.log 2>&1
+
+Make sure the shell script is pointing to the right path, and make sure the cron log is pointing to the right path. 
+
 
 
 ##Running
