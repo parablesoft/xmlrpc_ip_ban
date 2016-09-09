@@ -1,6 +1,6 @@
 
 f = File.readlines("bad_ips.txt")
-whitelist = ["47.202.18.133","45.55.52.204"]
+whitelist = []
 
 f.each do |ip_line|
 	ip = ip_line.split(" ").last
